@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+// TODO: Define props for Speaker card
 export const SpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
   return (
     <div className='w-full bg-white rounded-2xl shadow-lg shadow-blue-100 overflow-hidden flex flex-col md:flex-row max-w-2xl mx-auto'>
@@ -42,6 +43,7 @@ export const SpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
             </p>
           </div>
           {/* Logos */}
+          {/* TODO: Use ReactIcons for logos */}
           <div className='flex justify-start space-x-2'>
             <a href='#' className='text-gray-500 hover:text-gray-600'>
               <svg
