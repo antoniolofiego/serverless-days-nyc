@@ -1,8 +1,29 @@
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Speakers } from '../components';
 
 export default function Home() {
+  // TODO: replace mock theme with next-themes provided one
+  const [theme, setTheme] = useState('light');
+  const [logoFile, setLogoFile] = useState('/images/logo.png');
+
+  useEffect(() => {
+    switch (theme) {
+      case 'light': {
+        setLogoFile('/images/logo.png');
+        break;
+      }
+      case 'dark': {
+        setLogoFile('/images/logo_darkmode.png');
+        break;
+      }
+      default: {
+        setLogoFile('/images/logo.png');
+      }
+    }
+  }, [theme]);
+
   return (
     <div>
       <Head>
@@ -14,13 +35,15 @@ export default function Home() {
       <div className='to-transparent'>
         <div className='h-32 relative my-32'>
           <Image
-            src='/images/logo.png'
+            src={logoFile}
             layout='fill'
             objectFit='contain'
             alt='ServerlessDays NYC Logo'
           />
         </div>
       </div>
+      <button onClick={() => setTheme('light')}>Set light</button>
+      <button onClick={() => setTheme('dark')}>Set dark</button>
       <div className='max-w-6xl mx-auto'>
         <div>
           <Speakers />
