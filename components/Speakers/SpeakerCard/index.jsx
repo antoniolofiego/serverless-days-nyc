@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export const SpeakerCard = () => {
+export const SpeakerCard = ({ keynote = false }) => {
   return (
     <div className='w-full bg-white rounded-2xl shadow-lg shadow-blue-100 overflow-hidden flex flex-col md:flex-row'>
       <div className='w-full md:w-2/5 h-80'>
@@ -14,18 +14,27 @@ export const SpeakerCard = () => {
         </div>
       </div>
       <div className='w-full md:w-3/5 text-left p-6 md:p-4 space-y-2'>
-        <div className='divide-x-2'>
-          <span className='text-lg text-gray-700 font-bold pr-2'>
-            Dany Bailey
-          </span>
-          <span className='text-base text-gray-400 font-normal pl-2'>
-            Software Engineer @ Company
-          </span>
-        </div>
+        {keynote ? (
+          <div className='divide-x-2'>
+            <span className='text-lg text-gray-700 font-bold pr-2'>
+              Dany Bailey
+            </span>
+            <span className='text-base text-gray-400 font-normal pl-2'>
+              Software Engineer @ Company
+            </span>
+          </div>
+        ) : (
+          <div className='mb-4'>
+            <p className='text-lg text-gray-700 font-bold'>Dany Bailey</p>
+            <p className='text-sm text-gray-400 font-normal'>
+              Software Engineer @ Company
+            </p>
+          </div>
+        )}
         <h4 className='text-lg font-title text-blue-900 font-bold'>
           Talk name
         </h4>
-        <p className='text-base leading-relaxed text-gray-500 font-normal'>
+        <p className='text-sm leading-relaxed text-gray-500 font-normal'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
