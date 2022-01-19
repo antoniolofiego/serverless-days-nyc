@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 export const Navbar = () => {
   const [animateHeader, setAnimateHeader] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const listener = () => {
@@ -16,19 +18,26 @@ export const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (!router.asPath.includes('#')) {
+      window.scrollTo(0, 0);
+    }
+  }, [router]);
+
   const menuItems = [
     { title: 'Home', url: '/' },
     { title: 'About', url: '/about' },
     { title: 'Location', url: '/location' },
-    { title: 'Speakers', url: '/speakers' },
+    { title: 'Speakers', url: '/#speakers' },
     { title: 'Schedule', url: '/schedule' },
     { title: 'Sponsors', url: '/sponsors' },
   ];
 
   return (
     <header
-      className={`w-full backdrop-filter backdrop-blur-lg bg-gradient-to-br from-blue-50 to-transparent fixed z-10 trasition ease-in-out duration-500 ${
-        animateHeader && 'shadow-xl'
+      className={`w-full backdrop-filter backdrop-blur-lg fixed z-10 trasition ease-in-out duration-500 ${
+        animateHeader &&
+        'shadow-xl bg-gradient-to-br from-blue-50 to-transparent'
       }`}
     >
       <div className='max-w-7xl mx-auto '>
@@ -42,7 +51,12 @@ export const Navbar = () => {
               {menuItems?.map((item) => (
                 <li key={item?.title}>
                   <Link href={item?.url}>
-                    <a className='px-2 lg:px-6 py-6 text-md border-b-2 border-transparent hover:border-gray-400 leading-[22px] md:px-3 text-gray-900 hover:text-gray-400 font-title transition'>
+                    <a
+                      className='px-2 lg:px-6 py-6 text-md border-b-2 border-transparent hover:border-gray-400 leading-[22px] md:px-3 text-gray-900 hover:text-gray-400 font-title transition'
+                      onClick={() => {
+                        handleScrollToTop();
+                      }}
+                    >
                       {item?.title}
                     </a>
                   </Link>
