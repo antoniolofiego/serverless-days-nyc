@@ -1,28 +1,11 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Speakers } from '../components';
+import { Speakers, Logo } from '../components';
 
 export default function Home() {
   // TODO: replace mock theme with next-themes provided one
   const [theme, setTheme] = useState('light');
-  const [logoFile, setLogoFile] = useState('/images/logo.png');
-
-  useEffect(() => {
-    switch (theme) {
-      case 'light': {
-        setLogoFile('/images/logo.png');
-        break;
-      }
-      case 'dark': {
-        setLogoFile('/images/logo_darkmode.png');
-        break;
-      }
-      default: {
-        setLogoFile('/images/logo.png');
-      }
-    }
-  }, [theme]);
 
   return (
     <div>
@@ -32,15 +15,8 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       {/* TODO: Move hero section to its own component */}
-      <div className='to-transparent'>
-        <div className='h-32 relative my-32'>
-          <Image
-            src={logoFile}
-            layout='fill'
-            objectFit='contain'
-            alt='ServerlessDays NYC Logo'
-          />
-        </div>
+      <div className='flex justify-center py-32 mx-auto'>
+        <Logo mode={theme} />
       </div>
       <button onClick={() => setTheme('light')}>Set light</button>
       <button onClick={() => setTheme('dark')}>Set dark</button>
