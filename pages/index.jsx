@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <div className='to-transparent'>
-        <div className='h-32 relative'>
+        <div className='h-32 relative my-32'>
           <Image
             src='/images/logo.png'
             layout='fill'
