@@ -8,18 +8,18 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className='scroll-smooth'>
+      <Html className='transition scroll-smooth'>
         <Head>
           <link
-            href='https://fonts.googleapis.com/css2?family=Montserrat&display=optional'
+            href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
             rel='stylesheet'
           />
           <link
-            href='https://fonts.googleapis.com/css2?family=Open+Sans&display=optional'
+            href='https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'
             rel='stylesheet'
           />
         </Head>
-        <body className='bg-gradient-to-tl from-blue-200 to-transparent'>
+        <body className='bg-gradient-to-tl from-blue-200 dark:from-blue-900 to-transparent dark:to-black'>
           <Main />
           <NextScript />
         </body>
