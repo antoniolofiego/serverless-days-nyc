@@ -3,41 +3,41 @@ import Image from 'next/image';
 // TODO: Define props for Speaker card
 export const SpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
   return (
-    <div className='w-full bg-white rounded-2xl shadow-lg shadow-blue-100 overflow-hidden flex flex-col md:flex-row max-w-2xl mx-auto'>
+    <div className='flex flex-col w-full max-w-2xl mx-auto overflow-hidden shadow-lg bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-blue-100 dark:shadow-blue-900 md:flex-row'>
       <div className='w-full md:w-2/5 h-80'>
         <div className='relative w-full h-full'>
           <Image
-            className='object-center object-cover w-full h-full'
+            className='object-cover object-center w-full h-full'
             layout='fill'
             src='https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80'
             alt='photo'
           />
         </div>
       </div>
-      <div className='w-full md:w-3/5 text-left p-6 md:p-4 space-y-2'>
+      <div className='w-full p-6 space-y-2 text-left md:w-3/5 md:p-4'>
         <div className='flex flex-col justify-between h-full'>
           {/* Speaker Info */}
           <div className='space-y-2'>
             {keynote ? (
               <div className='divide-x-2'>
-                <span className='text-lg text-gray-700 font-bold pr-2'>
+                <span className='pr-2 text-lg font-bold text-gray-700 dark:text-gray-50'>
                   Dany Bailey ({pronouns})
                 </span>
-                <span className='text-base text-gray-400 font-normal pl-2'>
+                <span className='pl-2 text-base font-normal text-gray-400 dark:text-gray-300'>
                   Software Engineer @ Company
                 </span>
               </div>
             ) : (
               <div className='mb-4'>
-                <p className='text-lg text-gray-700 font-bold'>
+                <p className='text-lg font-bold text-gray-700 dark:text-gray-50'>
                   Dany Bailey ({pronouns})
                 </p>
-                <p className='text-sm text-gray-400 font-normal'>
+                <p className='text-sm font-normal text-gray-400 dark:text-gray-300'>
                   Software Engineer @ Company
                 </p>
               </div>
             )}
-            <p className='text-sm leading-relaxed text-gray-500 font-normal'>
+            <p className='text-sm font-normal leading-relaxed text-gray-700 dark:text-gray-100'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -45,7 +45,10 @@ export const SpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
           {/* Logos */}
           {/* TODO: Use ReactIcons for logos */}
           <div className='flex justify-start space-x-2'>
-            <a href='#' className='text-gray-500 hover:text-gray-600'>
+            <a
+              href='#'
+              className='text-gray-500 hover:text-gray-600 dark:text-gray-50 dark:hover:text-gray-200'
+            >
               <svg
                 className='w-6 h-6'
                 aria-hidden='true'
@@ -59,7 +62,10 @@ export const SpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
                 ></path>
               </svg>
             </a>
-            <a href='#' className='text-gray-500 hover:text-gray-600'>
+            <a
+              href='#'
+              className='text-gray-500 hover:text-gray-600 dark:text-gray-50 dark:hover:text-gray-200'
+            >
               <svg
                 className='w-6 h-6'
                 aria-hidden='true'
@@ -73,7 +79,10 @@ export const SpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
                 ></path>
               </svg>
             </a>
-            <a href='#' className='text-gray-500 hover:text-gray-600'>
+            <a
+              href='#'
+              className='text-gray-500 hover:text-gray-600 dark:text-gray-50 dark:hover:text-gray-200'
+            >
               <svg
                 className='w-6 h-6'
                 aria-hidden='true'
@@ -83,7 +92,10 @@ export const SpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
                 <path d='M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84'></path>
               </svg>
             </a>
-            <a href='#' className='text-gray-500 hover:text-gray-600'>
+            <a
+              href='#'
+              className='text-gray-500 hover:text-gray-600 dark:text-gray-50 dark:hover:text-gray-200'
+            >
               <svg
                 className='w-6 h-6'
                 aria-hidden='true'
