@@ -1,11 +1,18 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import { Speakers, Logo } from '../components';
+import { useTheme } from 'next-themes';
 
 export default function Home() {
-  // TODO: replace mock theme with next-themes provided one
-  const [theme, setTheme] = useState('light');
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme, resolvedTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+  console.log(resolvedTheme);
 
   return (
     <div>
@@ -18,12 +25,8 @@ export default function Home() {
       <div className='flex justify-center py-32 mx-auto'>
         <Logo mode={theme} />
       </div>
-      <button onClick={() => setTheme('light')}>Set light</button>
-      <button onClick={() => setTheme('dark')}>Set dark</button>
       <div className='max-w-6xl mx-auto'>
-        <div>
-          <Speakers />
-        </div>
+        <Speakers />
       </div>
     </div>
   );
