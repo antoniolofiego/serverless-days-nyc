@@ -1,7 +1,15 @@
-import React from 'react';
+import { useTheme } from 'next-themes';
+import { useMounted } from '../hooks';
 
-export const Logo = ({ mode = 'light' }) => {
-  const logoColor = mode === 'light' ? 'text-gray-800' : 'text-gray-50';
+export const Logo = () => {
+  const mounted = useMounted();
+
+  const { resolvedTheme } = useTheme();
+
+  if (!mounted) return null;
+
+  const logoColor =
+    resolvedTheme === 'light' ? 'text-gray-800' : 'text-gray-50';
 
   return (
     <svg
@@ -196,7 +204,6 @@ export const Logo = ({ mode = 'light' }) => {
         ></text>
         <g
           strokeWidth='0.75'
-          ariaLabel='nyc'
           fontFamily='Ubuntu Mono'
           fontSize='54'
           transform='scale(1 -1)'
