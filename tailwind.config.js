@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        title: ['Lato', ...defaultTheme.fontFamily.sans],
         sans: ['Open Sans', 'sans-serif', ...defaultTheme.fontFamily.sans],
       },
     },

@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html className='transition scroll-smooth'>
         <Head>
           <link
-            href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
+            href='https://fonts.googleapis.com/css2?family=Lato&display=swap'
             rel='stylesheet'
           />
           <link
