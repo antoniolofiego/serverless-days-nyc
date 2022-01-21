@@ -11,7 +11,7 @@ export const Hero = () => {
           className='object-cover xl:[clip-path:polygon(25%_0%,_100%_0%,_100%_100%,_0%_100%)] '
         />
       </div>
-      <div className='absolute [top:calc(50%_+_20px)] [right:30px] hidden md:block z-20'>
+      <div className='absolute [top:calc(50%_+_20px)] [right:calc(8%)] hidden md:block z-20'>
         <Image
           src='/images/unicorn_mascot.svg'
           alt='ServerlessDays Mascot'
@@ -40,17 +40,17 @@ export const Hero = () => {
               />
             </div>
           </div>
-          <div className='space-y-4'>
+          <div className='flex flex-col items-center justify-center w-full space-y-4 md:block'>
             <h1 className='text-2xl font-extrabold md:text-4xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'>
               One Day, One Track, One Community.
             </h1>
             <h2 className='text-xl font-extrabold md:text-2xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'>
               May 20, 2022 @ Microsoft Reactor
             </h2>
+            <button className='px-8 py-3 transition bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'>
+              Reserve your spot
+            </button>
           </div>
-          <button className='px-8 py-3 transition bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'>
-            Reserve your spot
-          </button>
         </div>
       </div>
     </div>
