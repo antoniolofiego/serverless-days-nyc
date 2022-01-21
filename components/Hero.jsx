@@ -1,11 +1,10 @@
 import Image from 'next/image';
-
 export const Hero = () => {
   return (
     <div className='relative h-[24rem]'>
       <div className='absolute w-full xl:right-0 xl:w-1/2 h-[24rem] blur-sm xl:blur-none'>
         <Image
-          src='/images/nyc.jpg'
+          src='https://images.unsplash.com/photo-1544111795-fe8b9def73f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=977&q=30'
           alt='Picture of NYC Times Square'
           layout='fill'
           className='object-cover xl:[clip-path:polygon(25%_0%,_100%_0%,_100%_100%,_0%_100%)] '
