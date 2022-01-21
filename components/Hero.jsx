@@ -20,8 +20,8 @@ export const Hero = () => {
           className='object-cover'
         />
       </div>
-      <div className='z-50 flex p-8 mx-auto max-w-7xl'>
-        <div className='z-50 space-y-6'>
+      <div className='z-20 flex p-8 mx-auto max-w-7xl'>
+        <div className='z-20 space-y-6'>
           <>
             <div className='hidden xl:block dark:xl:hidden'>
               <Image
