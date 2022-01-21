@@ -33,7 +33,10 @@ export const TimelineItem = ({ dateCopy, nextDate }) => {
   ];
 
   return (
-    <div className='relative flex items-center h-full group'>
+    <div
+      className='relative flex items-center h-full group'
+      aria-disabled={stepIsOver}
+    >
       <div className={`hidden w-1/4 lg:block ${stepIsOver && 'text-gray-500'}`}>
         <div
           className={`space-x-1 md:flex group-hover:text-gray-700 dark:group-hover:text-gray-300 ${
