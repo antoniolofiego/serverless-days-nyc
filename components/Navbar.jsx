@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const listener = () => {
-      if (window.scrollY > 140) {
+      if (window.scrollY > 100) {
         setAnimateHeader(true);
       } else setAnimateHeader(false);
     };
@@ -36,8 +36,9 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`w-full backdrop-filter backdrop-blur-lg fixed z-10 transition ease-in-out duration-500 ${
-        animateHeader && 'shadow-xl dark:bg-blue-900/75'
+      className={`w-full fixed transition ease-in-out duration-500 z-50 ${
+        animateHeader &&
+        'shadow-xl dark:bg-blue-900/50 backdrop-filter backdrop-blur-lg'
       }`}
     >
       <div className='mx-auto max-w-7xl '>
@@ -51,12 +52,7 @@ export const Navbar = () => {
               {menuItems?.map((item) => (
                 <li key={item?.title}>
                   <Link href={item?.url}>
-                    <a
-                      className='px-2 lg:px-6 py-6 text-md border-b-2 border-transparent hover:border-gray-400 leading-[22px] md:px-3 text-gray-900 dark:text-gray-50 hover:text-gray-400 font-title transition'
-                      onClick={() => {
-                        handleScrollToTop();
-                      }}
-                    >
+                    <a className='px-2 lg:px-6 py-6 text-md border-b-2 border-transparent hover:border-gray-400 leading-[22px] md:px-3 text-gray-900 dark:text-gray-50 hover:text-gray-400 font-title transition'>
                       {item?.title}
                     </a>
                   </Link>
