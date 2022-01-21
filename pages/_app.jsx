@@ -1,15 +1,17 @@
 import '../styles/globals.css';
 import { ThemeProvider } from 'next-themes';
-import { Navbar } from '../components';
+import { Navbar, ActiveBreakpoint } from '../components';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute='class'>
-      <Navbar />
-      <main className='pt-36'>
-        <Component {...pageProps} />
-      </main>
-    </ThemeProvider>
+    <ActiveBreakpoint>
+      <ThemeProvider attribute='class'>
+        <Navbar />
+        <main className='pt-36'>
+          <Component {...pageProps} />
+        </main>
+      </ThemeProvider>
+    </ActiveBreakpoint>
   );
 }
 
