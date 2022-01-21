@@ -2,7 +2,7 @@ import Image from 'next/image';
 export const Hero = () => {
   return (
     <div className='relative h-[24rem]'>
-      <div className='absolute w-full xl:right-0 xl:w-1/2 h-[24rem] blur-sm xl:blur-none'>
+      <div className='absolute w-full xl:right-0 xl:w-1/2 h-[24rem] blur-[1px] xl:blur-none'>
         <Image
           src='https://images.unsplash.com/photo-1544111795-fe8b9def73f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=977&q=30'
           alt='Picture of NYC Times Square'
@@ -40,10 +40,10 @@ export const Hero = () => {
             </div>
           </div>
           <div className='flex flex-col items-center justify-center w-full space-y-4 md:block'>
-            <h1 className='text-2xl font-extrabold md:text-4xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'>
+            <h1 className='text-2xl font-extrabold [text-shadow:_#000_1px_0_10px] xl:[text-shadow:_none] md:text-4xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'>
               One Day, One Track, One Community.
             </h1>
-            <h2 className='text-xl font-extrabold md:text-2xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'>
+            <h2 className='text-xl font-extrabold [text-shadow:_#000_1px_0_10px] xl:[text-shadow:_none] md:text-2xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'>
               May 20, 2022 @ Microsoft Reactor
             </h2>
             <button className='px-8 py-3 transition bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'>
