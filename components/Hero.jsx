@@ -16,9 +16,8 @@ export const Hero = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      translateX: 0,
       duration: 1,
-      transition: { delay: 0.5 },
+      transition: { delay: 0.7 },
     },
   };
 
@@ -105,7 +104,7 @@ export const Hero = () => {
               initial='hidden'
               animate='visible'
               whileTap={{ scale: 0.95 }}
-              className='px-8 py-3 transition bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'
+              className='px-8 py-3 bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'
             >
               Reserve your spot
             </motion.button>
