@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 export const Hero = () => {
   return (
     <div className='relative h-[24rem]'>
