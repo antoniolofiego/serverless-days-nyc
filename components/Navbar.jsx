@@ -32,6 +32,7 @@ export const Navbar = () => {
     { title: 'Speakers', url: '/#speakers' },
     { title: 'Schedule', url: '/schedule' },
     { title: 'Sponsors', url: '/sponsors' },
+    { title: 'CoC', url: '/coc' },
   ];
 
   return (
