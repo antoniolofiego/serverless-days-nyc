@@ -1,6 +1,7 @@
 import { TimelineItem, Heading } from '../components';
 
 export const Timeline = () => {
+  // TODO: add actual timeline instead of mock one
   const dateCopy = [
     {
       date: '2022-01-10 EST',
