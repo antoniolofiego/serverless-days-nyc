@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const listener = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 80) {
         setAnimateHeader(true);
       } else setAnimateHeader(false);
     };
