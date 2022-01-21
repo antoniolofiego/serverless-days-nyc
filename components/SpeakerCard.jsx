@@ -1,19 +1,44 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-// TODO: Define props for Speaker card
-export const SpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
+export const SpeakerCard = ({ pronouns = 'he/him' }) => {
   return (
-    <div className='flex flex-col w-full max-w-2xl mx-auto overflow-hidden shadow-lg bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-blue-100 dark:shadow-blue-900 md:flex-row'>
-      <div className='w-full md:w-2/5 h-80'>
-        <div className='relative w-full h-full'>
+    <motion.div className='flex flex-col items-center justify-center space-y-2'>
+      <motion.div
+        whileHover={{
+          scale: 1.03,
+          transition: { duration: 0.2 },
+        }}
+        className='flex items-center justify-center group'
+      >
+        <div className='absolute rounded-full w-[12.25rem] h-[12.5rem] bg-gradient-to-r from-blue-900 to-blue-300 group-hover:animate-spin transition-all' />
+        <div className='relative w-48 h-48 rounded-full aspect-square '>
           <Image
-            className='object-cover object-center w-full h-full'
+            className='object-cover object-center w-full h-full rounded-full'
             layout='fill'
             src='https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80'
             alt='photo'
           />
         </div>
+      </motion.div>
+
+      <div className='flex flex-col items-center justify-center space-y-2'>
+        <span className='pr-2 text-lg font-bold text-blue-900 dark:text-gray-200'>
+          Dany Bailey ({pronouns})
+        </span>
+        <span className='pl-2 text-base font-normal text-gray-700 dark:text-blue-50'>
+          Software Engineer @ Company
+        </span>
       </div>
+    </motion.div>
+  );
+};
+
+// TODO: Define props for Speaker card
+export const OldSpeakerCard = ({ keynote = false, pronouns = 'he/him' }) => {
+  return (
+    <div className='flex flex-col w-full max-w-2xl mx-auto overflow-hidden shadow-lg bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-blue-100 dark:shadow-blue-900 md:flex-row'>
+      <div className=''></div>
       <div className='w-full p-6 space-y-2 text-left md:w-3/5 md:p-4'>
         <div className='flex flex-col justify-between h-full'>
           {/* Speaker Info */}
