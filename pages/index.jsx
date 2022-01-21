@@ -10,7 +10,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
-      <div className='max-w-6xl mx-auto'>
+      <div className='max-w-6xl mx-auto space-y-12'>
         <Timeline />
         <Speakers />
       </div>
