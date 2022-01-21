@@ -8,7 +8,7 @@ export const Speakers = () => {
       <Heading title='Speakers' />
 
       <div className='pt-4 mx-auto space-y-4 max-w-7xl'>
-        <div className='grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-x-6 gap-y-12 lg:grid-cols-2 xl:grid-cols-3'>
           {speakers.map((_, i) => {
             return <SpeakerCard key={i} />;
           })}
