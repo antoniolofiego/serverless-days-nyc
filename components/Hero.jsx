@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const Hero = () => {
   return (
-    <div className='relative'>
+    <div className='relative h-[24rem]'>
       <div className='absolute w-full xl:right-0 xl:w-1/2 h-[24rem] blur-sm xl:blur-none'>
         <Image
           src='/images/nyc.jpg'
@@ -20,9 +20,9 @@ export const Hero = () => {
           className='object-cover'
         />
       </div>
-      <div className='z-20 flex p-8 mx-auto max-w-7xl'>
+      <div className='z-20 flex items-center h-full p-8 mx-auto max-w-7xl'>
         <div className='z-20 space-y-6'>
-          <>
+          <div>
             <div className='hidden xl:block dark:xl:hidden'>
               <Image
                 src='/images/logo_lightmode.png'
@@ -39,7 +39,7 @@ export const Hero = () => {
                 alt='ServerlessDays NYC Logo'
               />
             </div>
-          </>
+          </div>
           <div className='space-y-4'>
             <h1 className='text-2xl font-extrabold md:text-4xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'>
               One Day, One Track, One Community.
