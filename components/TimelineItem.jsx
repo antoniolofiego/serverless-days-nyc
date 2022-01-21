@@ -18,8 +18,6 @@ export const TimelineItem = ({ dateCopy, nextDate }) => {
     compareDesc(currentDate, stepDate) !== 1 &&
     compareDesc(currentDate, nextStepDate) !== 1;
 
-  console.log(stepIsOngoing, stepIsOver);
-
   const monthNames = [
     'January',
     'February',
