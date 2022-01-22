@@ -4,21 +4,21 @@ export const Timeline = () => {
   // TODO: add actual timeline instead of mock one
   const dateCopy = [
     {
-      date: '2022-01-10 EST',
+      date: '2022-01-12T11:59:59Z',
       title: 'CFP opens',
       url: 'http://example.com',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt natus blanditiis nam totam reiciendis molestiae autem impedit repudiandae minus eligendi a voluptatem voluptatum facere eveniet, at, sunt cumque officia.',
     },
     {
-      date: '2022-1-18 EST',
+      date: '2022-02-12T11:59:59Z',
       title: 'CFP closes',
       url: 'http://example.com',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt natus blanditiis nam totam reiciendis molestiae autem impedit repudiandae minus eligendi a voluptatem voluptatum facere eveniet, at, sunt cumque officia.',
     },
     {
-      date: '2022-2-24 EST',
+      date: '2022-03-12T11:59:59Z',
       title: 'Reviews done',
       url: 'http://example.com',
       description:
