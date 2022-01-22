@@ -1,14 +1,11 @@
-import { utcToZonedTime } from 'date-fns-tz';
 import { compareDesc } from 'date-fns';
 
 export const TimelineItem = ({ dateCopy, nextDate }) => {
   const { title, url, description } = dateCopy;
 
-  const timeZone = 'America/New_York';
-
-  const stepDate = utcToZonedTime(new Date(dateCopy.date), timeZone);
-  const nextStepDate = utcToZonedTime(new Date(nextDate), timeZone);
-  const currentDate = utcToZonedTime(new Date(), timeZone);
+  const stepDate = new Date(dateCopy.date);
+  const nextStepDate = new Date(nextDate);
+  const currentDate = Date.now();
 
   const stepIsOngoing =
     compareDesc(currentDate, stepDate) !== 1 &&

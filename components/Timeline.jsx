@@ -33,13 +33,12 @@ export const Timeline = () => {
     >
       <Heading title='Important Dates' />
       {dateCopy.map((step, i, elements) => {
-        return (
-          <TimelineItem
-            key={i}
-            dateCopy={step}
-            nextDate={elements[i + 1]?.date || '2022-05-20 EST'}
-          />
-        );
+        let nextDate = elements[i + 1]?.date;
+        if (i + 1 === elements.length) {
+          nextDate = '2022-05-20 EST';
+        }
+
+        return <TimelineItem key={i} dateCopy={step} nextDate={nextDate} />;
       })}
     </div>
   );
