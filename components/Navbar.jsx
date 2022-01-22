@@ -36,39 +36,45 @@ export const Navbar = () => {
   ];
 
   return (
-    <header
-      className={`w-full fixed transition ease-in-out duration-500 z-50 ${
-        animateHeader &&
-        'shadow-xl dark:bg-blue-900/50 backdrop-filter backdrop-blur-lg'
-      }`}
-    >
-      <div className='mx-auto max-w-7xl '>
-        <div
-          className={`flex max-w-screen-xl py-10 ${
-            animateHeader && 'py-5'
-          } mx-auto items-center justify-between px-8 trasition ease-in-out duration-500`}
-        >
-          <nav>
-            <ul className='flex items-center justify-start'>
-              {menuItems?.map((item) => (
-                <li key={item?.title}>
-                  <Link href={item?.url}>
-                    <a className='px-2 lg:px-6 py-6 text-md border-b-2 border-transparent hover:border-gray-400 leading-[22px] md:px-3 text-gray-900 dark:text-gray-50 hover:text-gray-400 font-title transition'>
-                      {item?.title}
-                    </a>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className='flex items-center space-x-8'>
-            <ThemeSwitcherButton height='h-8' />
-            <button className='px-8 py-3 transition bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'>
-              Tickets
-            </button>
+    <>
+      <header
+        className={`w-full transition ease-in-out duration-500 z-50 sticky top-0 ${
+          animateHeader &&
+          'shadow-xl dark:bg-blue-900/50 backdrop-filter backdrop-blur-lg hidden md:block'
+        }`}
+      >
+        <div className='mx-auto max-w-7xl '>
+          <div
+            className={`md:flex max-w-screen-xl py-10 hidden sticky ${
+              animateHeader && 'py-5'
+            } mx-auto items-center justify-between px-8 trasition ease-in-out duration-500`}
+          >
+            <nav>
+              <ul className='flex items-center justify-start'>
+                {menuItems?.map((item) => (
+                  <li key={item?.title}>
+                    <Link href={item?.url}>
+                      <a className='px-2 lg:px-6 py-6 text-md border-b-2 border-transparent hover:border-gray-400 leading-[22px] md:px-3 text-gray-900 dark:text-gray-50 hover:text-gray-400 font-title transition'>
+                        {item?.title}
+                      </a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className='flex items-center space-x-8'>
+              <ThemeSwitcherButton height='h-8' />
+              <button className='px-8 py-3 transition bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'>
+                Tickets
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+
+      <header className='fixed bottom-0 right-0 z-50 block p-8 md:hidden'>
+        <ThemeSwitcherButton height='h-12' />
+      </header>
+    </>
   );
 };
