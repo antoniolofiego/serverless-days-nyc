@@ -27,7 +27,10 @@ export const Timeline = () => {
   ];
 
   return (
-    <div className='flex flex-col max-w-2xl mx-auto lg:max-w-5xl'>
+    <div
+      className='flex flex-col max-w-2xl mx-auto lg:max-w-5xl scroll-mt-28'
+      id='dates'
+    >
       <Heading title='Important Dates' />
       {dateCopy.map((step, i, elements) => {
         return (
