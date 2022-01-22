@@ -72,7 +72,7 @@ export const Navbar = () => {
         </div>
       </header>
 
-      <header className='fixed bottom-0 right-0 z-50 block p-8 md:hidden'>
+      <header className='fixed z-50 w-12 bottom-4 right-4 md:hidden'>
         <ThemeSwitcherButton height='h-12' />
       </header>
     </>
