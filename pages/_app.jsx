@@ -7,9 +7,7 @@ function MyApp({ Component, pageProps }) {
     <ActiveBreakpoint>
       <ThemeProvider attribute='class'>
         <Navbar />
-        <main className='pt-36'>
-          <Component {...pageProps} />
-        </main>
+        <Component {...pageProps} />
       </ThemeProvider>
     </ActiveBreakpoint>
   );
