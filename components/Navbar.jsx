@@ -27,12 +27,12 @@ export const Navbar = () => {
 
   const menuItems = [
     { title: 'Home', url: '/' },
-    { title: 'About', url: '/about' },
-    { title: 'Location', url: '/location' },
+    { title: 'Dates', url: '/#dates' },
+    { title: 'Location', url: '/#location' },
     { title: 'Speakers', url: '/#speakers' },
-    { title: 'Schedule', url: '/schedule' },
-    { title: 'Sponsors', url: '/sponsors' },
-    { title: 'CoC', url: '/coc' },
+    { title: 'Schedule', url: '/#schedule' },
+    { title: 'Sponsors', url: '/#sponsors' },
+    { title: 'CoC', url: '/#coc' },
   ];
 
   return (
