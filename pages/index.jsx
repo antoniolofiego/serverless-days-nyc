@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Speakers, Hero, Timeline } from '../components';
+import { Speakers, Hero, Timeline, Agenda } from '../components';
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
       <div className='max-w-6xl mx-auto space-y-12'>
         <Timeline />
         <Speakers />
+        <Agenda />
       </div>
     </div>
   );
