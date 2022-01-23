@@ -1,6 +1,8 @@
+export { Agenda } from './Agenda';
 export { ActiveBreakpoint } from './ActiveBreakpoint';
 export { Heading } from './Heading';
 export { Hero } from './Hero';
+export { Modal } from './Modal';
 export { Navbar } from './Navbar';
 export { Speakers } from './Speakers';
 export { Timeline } from './Timeline';
