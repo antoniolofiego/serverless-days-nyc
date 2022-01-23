@@ -23,7 +23,7 @@ export const EventCard = ({ talkName, speakerName, description }) => {
       >
         <p className='px-8'>10:30am</p>
         <div className='flex flex-col items-start justify-around h-full px-8 space-y-2'>
-          <h4 className='text-left'>{talkName}</h4>
+          <h3 className='text-left'>{talkName}</h3>
           <p className='font-black leading-relaxed'>{speakerName}</p>
         </div>
       </motion.button>
