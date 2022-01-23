@@ -22,6 +22,7 @@ class MyDocument extends Document {
         <body className='bg-gradient-to-tl from-blue-200 dark:from-blue-900 to-transparent dark:to-black'>
           <Main />
           <NextScript />
+          <div id='modal-root'></div>
         </body>
       </Html>
     );
