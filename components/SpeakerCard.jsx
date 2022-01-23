@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const SpeakerCard = ({ pronouns = 'he/him' }) => {
   return (
-    <motion.div className='flex flex-col items-center justify-center space-y-2'>
+    <motion.div className='flex items-center justify-center space-x-6 space-y-2 md:flex-col md:space-x-0'>
       <motion.div
         whileHover={{
           scale: 1.03,
@@ -22,11 +22,11 @@ export const SpeakerCard = ({ pronouns = 'he/him' }) => {
         </div>
       </motion.div>
 
-      <div className='flex flex-col items-center justify-center space-y-2'>
-        <span className='pr-2 text-lg font-bold text-blue-900 dark:text-gray-200'>
+      <div className='flex flex-col items-start justify-center space-y-2 md:items-center'>
+        <span className='text-lg font-bold text-blue-900 dark:text-gray-200'>
           Dany Bailey ({pronouns})
         </span>
-        <span className='pl-2 text-base font-normal text-gray-700 dark:text-blue-50'>
+        <span className='text-base font-normal text-gray-700 dark:text-blue-50'>
           Software Engineer @ Company
         </span>
       </div>
