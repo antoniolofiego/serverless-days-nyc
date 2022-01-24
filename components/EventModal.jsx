@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { EventModalCard } from './EventModalCard';
 import { motion, AnimatePresence } from 'framer-motion';
 import { talks } from '../data/talks';
