@@ -32,7 +32,7 @@ const ModalComponent = ({ handleClose, children }) => {
         initial='hidden'
         animate='visible'
         exit='exit'
-        className='items-center max-w-[50%]'
+        className='items-center'
         onClick={(e) => e.stopPropagation()}
       >
         {children}
