@@ -3,18 +3,8 @@ import { EventModalCard } from './EventModalCard';
 import { motion, AnimatePresence } from 'framer-motion';
 import { talks } from '../data/talks';
 
-const ModalCardWrapper = forwardRef((props, ref) => {
-  return <div ref={ref}>{props.children}</div>;
-});
-
-ModalCardWrapper.displayName = 'ModalCardWrapper';
-
 export const EventModal = ({ startingTalk }) => {
   const modalsRef = useRef(Array(talks));
-
-  console.log(startingTalk);
-
-  console.log(modalsRef.current[startingTalk]);
 
   useEffect(() => {
     modalsRef.current[startingTalk].scrollIntoView({
@@ -27,7 +17,7 @@ export const EventModal = ({ startingTalk }) => {
   console.log(modalsRef);
 
   return (
-    <div className='flex items-center overflow-hidden snap-x snap-mandatory'>
+    <div className='flex items-center overflow-scroll md:overflow-hidden snap-x snap-mandatory'>
       <EventModalCard empty />
       <EventModalCard empty />
       {talks.map((talk, i) => {
