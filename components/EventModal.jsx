@@ -20,15 +20,15 @@ export const EventModal = ({ startingTalk }) => {
     <div className='flex items-center overflow-scroll md:overflow-hidden snap-x snap-mandatory'>
       <EventModalCard empty />
       <EventModalCard empty />
-      {talks.map((talk, i) => {
-        return (
-          <AnimatePresence
-            key={i}
-            initial={false}
-            exitBeforeEnter={true}
-            onExitComplete={() => null}
-          >
+      <AnimatePresence
+        initial={false}
+        exitBeforeEnter={true}
+        onExitComplete={() => null}
+      >
+        {talks.map((talk, i) => {
+          return (
             <motion.div
+              key={i}
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               ref={(el) => (modalsRef.current[i] = el)}
               onClick={() =>
@@ -47,9 +47,9 @@ export const EventModal = ({ startingTalk }) => {
                 speakerName={talk.speakerName}
               />
             </motion.div>
-          </AnimatePresence>
-        );
-      })}
+          );
+        })}
+      </AnimatePresence>
       <EventModalCard empty />
       <EventModalCard empty />
     </div>
