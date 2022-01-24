@@ -38,7 +38,7 @@ export const EventModal = ({ startingTalk }) => {
                   inline: 'center',
                 })
               }
-              className='max-w-xs p-12 mx-12 my-12 overflow-hidden border border-gray-900 rounded-lg shadom-md snap-center sm:max-w-md md:max-w-lg lg:max-w-2xl shrink-0 bg-gray-50 dark:bg-gradient-to-br dark:from-gray-900 dark:to-blue-900 dark:border-gray-50'
+              className='max-w-xs p-12 mx-12 my-4 overflow-hidden border border-gray-900 rounded-lg shadom-md snap-center sm:max-w-md md:max-w-lg lg:max-w-2xl shrink-0 bg-gray-50 dark:bg-gradient-to-br dark:from-gray-900 dark:to-blue-900 dark:border-gray-50'
             >
               <EventModalCard
                 startingTalk={startingTalk}
