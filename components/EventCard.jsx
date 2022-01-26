@@ -35,7 +35,7 @@ export const EventCard = ({ talkName, speakerName, id }) => {
       >
         {modalIsOpen && (
           <Modal modalIsOpen={modalIsOpen} handleClose={close}>
-            <EventModal startingTalk={id} />
+            <EventModal startingTalk={id} handleClose={close} />
           </Modal>
         )}
       </AnimatePresence>

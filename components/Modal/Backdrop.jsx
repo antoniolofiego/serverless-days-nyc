@@ -12,7 +12,7 @@ export const Backdrop = ({ handleClose, children }) => {
       <motion.button
         whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.95, transition: { duration: 0.2 } }}
-        className='fixed top-0 right-0 p-8 text-4xl'
+        className='fixed top-0 right-0 z-50 p-8 text-4xl'
         onClick={handleClose}
       >
         x

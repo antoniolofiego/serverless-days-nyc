@@ -3,7 +3,7 @@ import { EventModalCard } from './EventModalCard';
 import { motion, AnimatePresence } from 'framer-motion';
 import { talks } from '../data/talks';
 
-export const EventModal = ({ startingTalk }) => {
+export const EventModal = ({ startingTalk, handleClose }) => {
   const modalsRef = useRef(Array(talks));
 
   useEffect(() => {
@@ -17,7 +17,10 @@ export const EventModal = ({ startingTalk }) => {
   console.log(modalsRef);
 
   return (
-    <div className='flex items-center overflow-scroll md:overflow-hidden snap-x snap-mandatory'>
+    <div
+      className='z-20 flex items-center h-screen overflow-scroll snap-x snap-mandatory'
+      onClick={handleClose}
+    >
       <EventModalCard empty />
       <EventModalCard empty />
       <AnimatePresence
