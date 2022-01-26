@@ -6,6 +6,7 @@ export { Hero } from './Hero';
 export { Modal } from './Modal';
 export { Navbar } from './Navbar';
 export { Speakers } from './Speakers';
+export { Sponsors } from './Sponsors';
 export { Timeline } from './Timeline';
 export { TimelineItem } from './TimelineItem';
 export { ThemeSwitcherButton } from './ThemeSwitcherButton';

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Speakers, Hero, Timeline, Agenda } from '../components';
+import { Speakers, Hero, Timeline, Agenda, Sponsors } from '../components';
 
 export default function Home() {
   return (
@@ -14,10 +14,11 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
-      <div className='max-w-6xl mx-auto space-y-12'>
+      <div className='max-w-5xl mx-auto space-y-16'>
         <Timeline />
         <Speakers />
         <Agenda />
+        <Sponsors />
       </div>
     </div>
   );
