@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className='flex flex-col items-center justify-between h-full py-4 mx-auto md:max-w-2xl lg:max-w-4xl md:flex-row'>
           <div className='space-y-4'>
             <div>
-              <div className='hidden xl:block dark:xl:hidden'>
+              <div className='block dark:hidden'>
                 <Image
                   src='/images/logo_lightmode.png'
                   height='30'
@@ -26,7 +26,7 @@ export const Footer = () => {
                   alt='ServerlessDays NYC Logo'
                 />
               </div>
-              <div className='block xl:hidden dark:xl:block'>
+              <div className='hidden dark:block'>
                 <Image
                   src='/images/logo_darkmode.png'
                   height='30'
