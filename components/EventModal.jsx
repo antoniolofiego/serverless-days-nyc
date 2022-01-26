@@ -34,13 +34,14 @@ export const EventModal = ({ startingTalk, handleClose }) => {
               key={i}
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               ref={(el) => (modalsRef.current[i] = el)}
-              onClick={() =>
+              onClick={(e) => {
+                e.stopPropagation();
                 modalsRef.current[i].scrollIntoView({
                   behavior: 'smooth',
                   block: 'center',
                   inline: 'center',
-                })
-              }
+                });
+              }}
               className='max-w-xs p-12 mx-12 my-4 overflow-hidden border border-gray-900 rounded-lg shadom-md snap-center sm:max-w-md md:max-w-lg lg:max-w-2xl shrink-0 bg-gray-50 dark:bg-gradient-to-br dark:from-gray-900 dark:to-blue-900 dark:border-gray-50'
             >
               <EventModalCard
@@ -48,6 +49,7 @@ export const EventModal = ({ startingTalk, handleClose }) => {
                 talkName={talk.talkName}
                 description={talk.description}
                 speakerName={talk.speakerName}
+                time={talk.time}
               />
             </motion.div>
           );
