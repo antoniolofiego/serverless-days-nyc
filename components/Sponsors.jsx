@@ -2,10 +2,7 @@ import { Heading } from './Heading';
 
 export const Sponsors = () => {
   return (
-    <div
-      id='sponsors'
-      className='flex flex-col max-w-4xl pb-12 mx-auto space-y-6'
-    >
+    <div id='sponsors' className='flex flex-col max-w-4xl mx-auto space-y-6'>
       <Heading title='Sponsors' />
       <h2 className='text-2xl font-bold text-center font-title'>
         Become a sponsor!
