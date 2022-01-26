@@ -1,6 +1,7 @@
 export { Agenda } from './Agenda';
 export { ActiveBreakpoint } from './ActiveBreakpoint';
 export { EventCard } from './EventCard';
+export { Footer } from './Footer';
 export { Heading } from './Heading';
 export { Hero } from './Hero';
 export { Modal } from './Modal';

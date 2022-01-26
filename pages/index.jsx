@@ -1,5 +1,12 @@
 import Head from 'next/head';
-import { Speakers, Hero, Timeline, Agenda, Sponsors } from '../components';
+import {
+  Speakers,
+  Hero,
+  Timeline,
+  Agenda,
+  Sponsors,
+  Footer,
+} from '../components';
 
 export default function Home() {
   return (
@@ -20,6 +27,7 @@ export default function Home() {
         <Agenda />
         <Sponsors />
       </div>
+      <Footer />
     </div>
   );
 }
