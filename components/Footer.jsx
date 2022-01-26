@@ -13,7 +13,7 @@ export const Footer = () => {
   ];
 
   return (
-    <div className='py-8 dark:bg-gray-900' id='footer'>
+    <div className='py-8 bg-gray-50 dark:bg-gray-900' id='footer'>
       <div>
         <div className='flex flex-col items-center justify-between h-full py-4 mx-auto md:max-w-2xl lg:max-w-4xl md:flex-row'>
           <div className='space-y-4'>
