@@ -15,7 +15,7 @@ export const Footer = () => {
   return (
     <div className='py-8 dark:bg-gray-900' id='footer'>
       <div>
-        <div className='flex items-center justify-between h-full max-w-5xl py-4 mx-auto'>
+        <div className='flex flex-col items-center justify-between h-full py-4 mx-auto md:max-w-2xl lg:max-w-4xl md:flex-row'>
           <div className='space-y-4'>
             <div>
               <div className='hidden xl:block dark:xl:hidden'>
@@ -36,7 +36,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            <div className='space-y-1 font-title'>
+            <div className='space-y-1 text-center font-title md:text-left'>
               <p>May 20, 2022</p>
               <p>Microsoft Reactor</p>
               <p>335 Madison Ave</p>
@@ -44,7 +44,7 @@ export const Footer = () => {
             </div>
           </div>
           <nav>
-            <ul className='flex flex-col items-end justify-end'>
+            <ul className='flex-col items-end justify-end hidden md:flex'>
               {menuItems?.map((item) => (
                 <li key={item?.title}>
                   <Link href={item?.url}>
