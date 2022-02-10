@@ -97,7 +97,7 @@ export const Hero = () => {
               custom={0.4}
               className='text-xl font-extrabold [text-shadow:_#000_1px_0_10px] xl:[text-shadow:_none] md:text-2xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'
             >
-              May 20, 2022 @ Microsoft Reactor
+              June 23, 2022 @ Microsoft Reactor
             </motion.h2>
             <motion.button
               variants={buttonVariants}
