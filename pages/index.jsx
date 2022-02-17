@@ -23,8 +23,8 @@ export default function Home() {
       <Hero />
       <div className='max-w-5xl mx-auto space-y-16'>
         <Timeline />
-        <Speakers />
-        <Agenda />
+        {/* <Speakers /> */}
+        {/* <Agenda /> */}
         <Sponsors />
       </div>
       <Footer />

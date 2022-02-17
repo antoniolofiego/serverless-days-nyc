@@ -29,8 +29,8 @@ export const Navbar = () => {
     { title: 'Home', url: '/' },
     { title: 'Dates', url: '/#dates' },
     { title: 'Location', url: '/#location' },
-    { title: 'Speakers', url: '/#speakers' },
-    { title: 'Agenda', url: '/#agenda' },
+    // { title: 'Speakers', url: '/#speakers' },
+    // { title: 'Agenda', url: '/#agenda' },
     { title: 'Sponsors', url: '/#sponsors' },
     { title: 'CoC', url: '/#coc' },
   ];
