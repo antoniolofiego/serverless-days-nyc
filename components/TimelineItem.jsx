@@ -1,7 +1,7 @@
 import { compareDesc } from 'date-fns';
 
 export const TimelineItem = ({ dateCopy, nextDate }) => {
-  const { title, url, description } = dateCopy;
+  const { title, description, url, ctaText } = dateCopy;
 
   const stepDate = new Date(dateCopy.date);
   const nextStepDate = new Date(nextDate);
@@ -77,6 +77,13 @@ export const TimelineItem = ({ dateCopy, nextDate }) => {
           className='mb-8'
           dangerouslySetInnerHTML={{ __html: description }}
         />
+        {url && ctaText && (
+          <button className='px-8 pt-3 pb-4 mb-8 bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'>
+            <a href={url} target='_blank '>
+              {ctaText}
+            </a>
+          </button>
+        )}
       </div>
     </div>
   );
