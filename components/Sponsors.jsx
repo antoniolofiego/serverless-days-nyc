@@ -1,10 +1,11 @@
 import { Heading } from './Heading';
+import { AnimatingDiv } from './AnimatingDiv';
 
 export const Sponsors = () => {
   return (
-    <div
+    <AnimatingDiv
       id='sponsors'
-      className='flex flex-col max-w-md mx-auto space-y-6 lg:max-w-4xl md:max-w-2xl'
+      className='flex flex-col max-w-xs mx-auto space-y-6 sm:max-w-md lg:max-w-4xl md:max-w-2xl'
     >
       <Heading title='Sponsors' />
       <h2 className='text-2xl font-bold text-center font-title'>
@@ -33,6 +34,6 @@ export const Sponsors = () => {
           nyc@serverlessdays.io
         </a>
       </p>
-    </div>
+    </AnimatingDiv>
   );
 };

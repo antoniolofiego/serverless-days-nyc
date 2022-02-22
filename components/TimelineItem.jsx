@@ -1,4 +1,5 @@
 import { compareDesc } from 'date-fns';
+import { AnimatingDiv } from './AnimatingDiv';
 
 export const TimelineItem = ({ dateCopy, nextDate }) => {
   const { title, description, url, ctaText } = dateCopy;
@@ -30,7 +31,7 @@ export const TimelineItem = ({ dateCopy, nextDate }) => {
   ];
 
   return (
-    <div
+    <AnimatingDiv
       className='relative flex items-center h-full group'
       aria-disabled={stepIsOver}
     >
@@ -85,6 +86,6 @@ export const TimelineItem = ({ dateCopy, nextDate }) => {
           </button>
         )}
       </div>
-    </div>
+    </AnimatingDiv>
   );
 };
