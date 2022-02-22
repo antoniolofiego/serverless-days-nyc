@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className='transition scroll-smooth'>
+      <Html className='transition scroll-smooth' lang='en'>
         <Head>
           <link
             href='https://fonts.googleapis.com/css2?family=Lato&display=swap'
