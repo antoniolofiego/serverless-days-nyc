@@ -1,5 +1,6 @@
-export { Agenda } from './Agenda';
 export { ActiveBreakpoint } from './ActiveBreakpoint';
+export { Agenda } from './Agenda';
+export { AnimatingDiv } from './AnimatingDiv';
 export { EventCard } from './EventCard';
 export { Footer } from './Footer';
 export { Heading } from './Heading';
