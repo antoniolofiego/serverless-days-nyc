@@ -1,3 +1,4 @@
+export { About } from './About';
 export { ActiveBreakpoint } from './ActiveBreakpoint';
 export { Agenda } from './Agenda';
 export { AnimatingDiv } from './AnimatingDiv';
