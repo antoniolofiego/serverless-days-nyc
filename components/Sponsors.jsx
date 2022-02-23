@@ -4,7 +4,7 @@ export const Sponsors = () => {
   return (
     <AnimatingDiv
       id='sponsors'
-      className='flex flex-col max-w-xs mx-auto space-y-6 sm:max-w-md lg:max-w-4xl md:max-w-2xl'
+      className='flex flex-col max-w-xs mx-auto space-y-6 sm:max-w-md lg:max-w-4xl md:max-w-2xl scroll-mt-28'
     >
       <Heading title='Sponsors' />
       <h2 className='text-2xl font-bold text-center font-title'>
