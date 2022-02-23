@@ -31,7 +31,7 @@ export const Timeline = () => {
       {dateCopy.map((step, i, elements) => {
         let nextDate = elements[i + 1]?.date;
         if (i + 1 === elements.length) {
-          nextDate = '2022-06-20T12:00:00-05:00';
+          nextDate = '2022-06-24T12:00:00-05:00';
         }
 
         return <TimelineItem key={i} dateCopy={step} nextDate={nextDate} />;

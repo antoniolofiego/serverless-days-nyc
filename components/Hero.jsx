@@ -97,7 +97,7 @@ export const Hero = () => {
               custom={0.4}
               className='text-xl font-extrabold [text-shadow:_#000_1px_0_10px] xl:[text-shadow:_none] md:text-2xl font-title text-gray-50 xl:text-gray-900 dark:xl:text-gray-50'
             >
-              June 23, 2022 @ Microsoft Reactor
+              June 24, 2022 @ Microsoft Reactor
             </motion.h2>
             <a
               href='https://ti.to/serverlessdays-nyc/serverlessdays-nyc-2022'
