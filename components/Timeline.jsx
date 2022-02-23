@@ -23,9 +23,9 @@ export const Timeline = () => {
   ];
 
   return (
-    <div
-      className='flex flex-col max-w-2xl mx-auto lg:max-w-5xl scroll-mt-28'
+    <section
       id='dates'
+      className='flex flex-col max-w-xs mx-auto sm:max-w-md lg:max-w-4xl md:max-w-2xl scroll-mt-28'
     >
       <Heading title='Important Dates' />
       {dateCopy.map((step, i, elements) => {
@@ -36,6 +36,9 @@ export const Timeline = () => {
 
         return <TimelineItem key={i} dateCopy={step} nextDate={nextDate} />;
       })}
-    </div>
+    </section>
   );
 };
+
+// Ticket sales are open today
+// Serverless Days NYC is able to present this year’s edition at no cost to attendees thanks to the generous support of our sponsors. Tickets and space are limited, so register today!
