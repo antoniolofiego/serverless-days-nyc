@@ -40,8 +40,8 @@ export const Footer = () => {
             <div className='space-y-1 text-center font-title md:text-left'>
               <p>June 24, 2022</p>
               <p>Microsoft Reactor</p>
-              <p>335 Madison Ave</p>
-              <p>New York, NY 10017</p>
+              <p>11 Times Square</p>
+              <p>New York, NY 10036</p>
             </div>
           </div>
           <nav>

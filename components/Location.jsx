@@ -3,11 +3,11 @@ import { AnimatingDiv, Map } from '../components';
 const location = {
   address: {
     name: 'Microsoft Reactor',
-    street: '335 Madison Ave',
-    city: 'New York, NY 10017',
+    street: '11 Times Square',
+    city: 'New York, NY 10036',
   },
-  lat: 40.75367938954828,
-  lng: -73.9781039152475,
+  lat: 40.75677536749415,
+  lng: -73.989747052186,
 };
 
 export const Location = () => {
