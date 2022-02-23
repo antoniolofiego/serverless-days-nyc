@@ -5,7 +5,7 @@ export const Timeline = () => {
     {
       date: '2022-02-24T00:00:00-05:00',
       title: 'CFP opens',
-      url: 'http://example.com', // TODO: Add real PaperCall link
+      url: 'https://www.papercall.io/serverlessdaynyc',
       ctaText: 'Submit your paper',
       description: `<p class='pb-4'>Do you have a rapid delivery success story you'd like to share? Do you work on a smaller team using next-generation frameworks to ship faster than your competition?</p><p>Submit your session and share your success with Serverless Days NYC attendees! Preference is given to sessions demonstrating lessons learned from delivering serverless projects. Talks that reference new frameworks and are being given for the first time or by first-time speakers are especially welcome.</p>`,
     },
