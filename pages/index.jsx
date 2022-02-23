@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import {
+  About,
   Speakers,
   Hero,
   Timeline,
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <Hero />
       <div className='max-w-5xl mx-auto space-y-16'>
+        <About />
         <Timeline />
         {/* <Speakers /> */}
         {/* <Agenda /> */}

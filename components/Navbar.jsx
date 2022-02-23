@@ -27,6 +27,7 @@ export const Navbar = () => {
 
   const menuItems = [
     { title: 'Home', url: '/' },
+    { title: 'About', url: '/#about' },
     { title: 'Dates', url: '/#dates' },
     { title: 'Location', url: '/#location' },
     // { title: 'Speakers', url: '/#speakers' },

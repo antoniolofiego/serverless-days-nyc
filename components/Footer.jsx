@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 export const Footer = () => {
   const menuItems = [
+    { title: 'About', url: '/#about' },
     { title: 'Dates', url: '/#dates' },
     { title: 'Location', url: '/#location' },
     // { title: 'Speakers', url: '/#speakers' },
