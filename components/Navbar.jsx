@@ -65,9 +65,15 @@ export const Navbar = () => {
             </nav>
             <div className='flex items-center space-x-8'>
               <ThemeSwitcherButton height='h-8' />
-              <button className='px-8 py-3 transition bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'>
-                Tickets
-              </button>
+              <a
+                href='https://ti.to/serverlessdays-nyc/serverlessdays-nyc-2022'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <button className='px-8 py-3 transition bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'>
+                  Tickets
+                </button>
+              </a>
             </div>
           </div>
         </div>

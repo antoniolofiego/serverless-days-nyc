@@ -99,15 +99,21 @@ export const Hero = () => {
             >
               June 23, 2022 @ Microsoft Reactor
             </motion.h2>
-            <motion.button
-              variants={buttonVariants}
-              initial='hidden'
-              animate='visible'
-              whileTap={{ scale: 0.95 }}
-              className='px-8 py-3 bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'
+            <a
+              href='https://ti.to/serverlessdays-nyc/serverlessdays-nyc-2022'
+              target='_blank'
+              rel='noreferrer'
             >
-              Reserve your spot
-            </motion.button>
+              <motion.button
+                variants={buttonVariants}
+                initial='hidden'
+                animate='visible'
+                whileTap={{ scale: 0.95 }}
+                className='px-8 py-3 mt-4 bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title'
+              >
+                Reserve your spot
+              </motion.button>
+            </a>
           </div>
         </div>
       </div>
