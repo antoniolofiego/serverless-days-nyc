@@ -1,5 +1,4 @@
-import { Heading } from './Heading';
-import { AnimatingDiv } from './AnimatingDiv';
+import { Heading, AnimatingDiv } from '../components';
 
 export const Sponsors = () => {
   return (

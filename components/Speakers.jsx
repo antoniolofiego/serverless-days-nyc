@@ -1,5 +1,4 @@
-import { SpeakerCard } from './SpeakerCard';
-import { Heading } from './Heading';
+import { SpeakerCard, Heading } from '../components';
 
 export const Speakers = () => {
   const speakers = [1, 2, 3, 4, 5, 6, 7, 8, 9];

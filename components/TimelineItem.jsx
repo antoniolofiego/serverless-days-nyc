@@ -1,5 +1,5 @@
 import { compareDesc } from 'date-fns';
-import { AnimatingDiv } from './AnimatingDiv';
+import { AnimatingDiv } from '../components';
 
 export const TimelineItem = ({ dateCopy, nextDate }) => {
   const { title, description, url, ctaText } = dateCopy;

@@ -1,5 +1,4 @@
-import { Heading } from './Heading';
-import { EventCard } from './EventCard';
+import { Heading, EventCard } from '../components';
 import { talks } from '../data/talks';
 
 export const Agenda = () => {

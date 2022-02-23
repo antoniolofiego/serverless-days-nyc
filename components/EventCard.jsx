@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Modal } from './Modal';
-import { EventModal } from './EventModal';
+import { Modal, EventModal } from '../components';
 
 export const EventCard = ({ talkName, speakerName, time, id }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);

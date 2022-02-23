@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { ThemeSwitcherButton } from './ThemeSwitcherButton';
+import { ThemeSwitcherButton } from '../components';
 
 export const Navbar = () => {
   const [animateHeader, setAnimateHeader] = useState(false);
