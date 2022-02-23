@@ -39,6 +39,3 @@ export const Timeline = () => {
     </section>
   );
 };
-
-// Ticket sales are open today
-// Serverless Days NYC is able to present this year’s edition at no cost to attendees thanks to the generous support of our sponsors. Tickets and space are limited, so register today!
