@@ -12,7 +12,7 @@ const location = {
 
 export const Location = () => {
   return (
-    <AnimatingDiv id='location'>
+    <AnimatingDiv id='location' className='scroll-mt-28'>
       <Map location={location} zoomLevel={13} />
     </AnimatingDiv>
   );
