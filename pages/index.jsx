@@ -5,6 +5,7 @@ import {
   Hero,
   Timeline,
   Agenda,
+  Location,
   Sponsors,
   Footer,
 } from '../components';
@@ -27,6 +28,7 @@ export default function Home() {
         <Timeline />
         {/* <Speakers /> */}
         {/* <Agenda /> */}
+        <Location />
         <Sponsors />
       </div>
       <Footer />
