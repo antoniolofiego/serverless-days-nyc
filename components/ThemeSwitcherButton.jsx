@@ -10,7 +10,7 @@ export const ThemeSwitcherButton = ({ height }) => {
 
   return (
     <button
-      data-testid='themeSwitcher'
+      aria-label='Theme Switcher button'
       className={`flex items-center text-sm rounded-md group ${height}`}
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >

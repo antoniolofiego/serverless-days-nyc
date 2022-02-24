@@ -1,8 +1,17 @@
+export { About } from './About';
 export { ActiveBreakpoint } from './ActiveBreakpoint';
+export { Agenda } from './Agenda';
+export { AnimatingDiv } from './AnimatingDiv';
+export { EventCard } from './EventCard';
+export { Footer } from './Footer';
 export { Heading } from './Heading';
 export { Hero } from './Hero';
+export { Location } from './Location';
+export { Map } from './Map';
+export { Modal } from './Modal';
 export { Navbar } from './Navbar';
 export { Speakers } from './Speakers';
+export { Sponsors } from './Sponsors';
 export { Timeline } from './Timeline';
 export { TimelineItem } from './TimelineItem';
 export { ThemeSwitcherButton } from './ThemeSwitcherButton';
