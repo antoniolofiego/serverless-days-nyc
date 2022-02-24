@@ -12,7 +12,7 @@ export const Timeline = () => {
     {
       date: '2022-04-24T00:00:00-05:00',
       title: 'CFP closes, review period',
-      description: `<p>The ServerlessDays NYC closes at midnight ET on April 24th, two months prior to the event. The team will start reviewing the submitted talks.</p>`,
+      description: `<p>The CFP for ServerlessDays NYC 2022 closes at midnight ET on April 24th, two months prior to the event. The team will start reviewing the submitted talks.</p>`,
     },
     {
       date: '2022-05-24T00:00:00-05:00',
