@@ -11,11 +11,11 @@ export const About = () => {
           <h2 className='text-xl text-gray-500 dark:text-gray-300'>
             This year&apos;s focus
           </h2>
-          <h3 className='text-4xl font-extrabold font-title'>
+          <h3 className='text-3xl font-extrabold md:text-4xl font-title'>
             Serverless for Everyone
           </h3>
         </div>
-        <div className='space-y-6 lg:self-center'>
+        <div className='max-w-xs mx-auto space-y-6 sm:max-w-md md:max-w-xl lg:max-w-none lg:self-center'>
           <p>
             Large organizations have led the way in adopting serverless, using
             their scale to educate development teams, build specialized skills,
