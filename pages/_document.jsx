@@ -23,7 +23,7 @@ class MyDocument extends Document {
         <DefaultSeo
           openGraph={{
             type: 'website',
-            locale: 'en_IE',
+            locale: 'en_EN',
             url: 'https://nyc.serverlessdays.io/',
             site_name: 'ServerlessDays NYC',
           }}
