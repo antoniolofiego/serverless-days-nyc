@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import {
   About,
@@ -13,15 +14,26 @@ import {
 export default function Home() {
   return (
     <div className='space-y-32'>
-      <Head>
-        <title>ServerlessDays NYC</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <meta
-          name='description'
-          content='A single day conference on Serverless technologies in the heart of Manhattan'
-        />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+      <NextSeo
+        title='ServerlessDays NYC'
+        description='A single day conference on Serverless technologies in the heart of Manhattan'
+        openGraph={{
+          type: 'website',
+          url: 'https://nyc.serverlessdays.io',
+          title: 'ServerlessDays NYC',
+          description:
+            "This year's conference is for builders in small teams who want to get their applications in front of users as quickly as possible. The keynote, sessions, and optional workshops all focus on how you can deliver value without large investments in time and training. It's serverless that works for you!",
+          images: [
+            {
+              url: 'https://nyc.serverlessdays.io/images/og.png',
+              width: 1500,
+              height: 785,
+              alt: 'ServerlessDays NYC',
+            },
+          ],
+        }}
+      />
+
       <Hero />
       <div className='max-w-5xl mx-auto space-y-16'>
         <About />
