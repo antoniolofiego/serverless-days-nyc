@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-
+import { DefaultSeo } from 'next-seo';
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -18,7 +18,20 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'
             rel='stylesheet'
           />
+          <link rel='icon' href='/favicon.ico' />
         </Head>
+        <DefaultSeo
+          openGraph={{
+            type: 'website',
+            locale: 'en_IE',
+            url: 'https://nyc.serverlessdays.io/',
+            site_name: 'ServerlessDays NYC',
+          }}
+          twitter={{
+            cardType: 'summary_large_image',
+          }}
+        />
+
         <body className='bg-gradient-to-tl from-blue-200 dark:from-blue-900 to-transparent dark:to-black'>
           <Main />
           <NextScript />
