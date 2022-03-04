@@ -29,9 +29,9 @@ export const Sponsors = () => {
           more, please contact{' '}
           <a
             className='font-extrabold font-title'
-            href='mailto:nyc@serverlessdays.io'
+            href='mailto:newyork@serverlessdays.io'
           >
-            nyc@serverlessdays.io
+            newyork@serverlessdays.io
           </a>
         </p>
       </section>
