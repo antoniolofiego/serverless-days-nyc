@@ -33,7 +33,7 @@ export const Navbar = () => {
     // { title: 'Speakers', url: '/#speakers' },
     // { title: 'Agenda', url: '/#agenda' },
     { title: 'Sponsors', url: '/#sponsors' },
-    { title: 'CoC', url: '/#coc' },
+    { title: 'CoC', url: '/coc' },
   ];
 
   return (

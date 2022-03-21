@@ -8,7 +8,6 @@ import {
   Agenda,
   Location,
   Sponsors,
-  Footer,
 } from '../components';
 
 export default function Home() {
@@ -35,7 +34,7 @@ export default function Home() {
       />
 
       <Hero />
-      <div className='max-w-5xl mx-auto space-y-16'>
+      <div className='max-w-5xl pb-16 mx-auto space-y-16'>
         <About />
         <Timeline />
         {/* <Speakers /> */}
@@ -43,7 +42,6 @@ export default function Home() {
         <Location />
         <Sponsors />
       </div>
-      <Footer />
     </div>
   );
 }
