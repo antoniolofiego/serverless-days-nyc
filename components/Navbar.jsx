@@ -30,8 +30,7 @@ export const Navbar = () => {
     { title: 'About', url: '/#about' },
     { title: 'Dates', url: '/#dates' },
     { title: 'Location', url: '/#location' },
-    // { title: 'Speakers', url: '/#speakers' },
-    // { title: 'Agenda', url: '/#agenda' },
+    { title: 'Agenda', url: '/#agenda' },
     { title: 'Sponsors', url: '/#sponsors' },
     { title: 'CoC', url: '/coc' },
   ];

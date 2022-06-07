@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Modal, EventModal } from '../components';
 
-export const EventCard = ({ talkName, speakerName, time, id }) => {
+export const EventCard = ({ talkName, speaker, time, id }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const open = () => {
+    console.log('opening modal');
     setModalIsOpen(true);
   };
 
@@ -26,7 +27,7 @@ export const EventCard = ({ talkName, speakerName, time, id }) => {
         </div>
         <div className='flex flex-col items-start justify-around w-3/4 h-full col-span-6 px-8 space-y-2'>
           <h3 className='text-xl text-left font-title'>{talkName}</h3>
-          <p className='font-black leading-relaxed'>{speakerName}</p>
+          <p className='font-black leading-relaxed'>{speaker.name}</p>
         </div>
       </motion.button>
       <AnimatePresence

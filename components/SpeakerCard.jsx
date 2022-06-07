@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export const SpeakerCard = ({pronouns = 'he/him'}) => {
+export const SpeakerCard = ({ pronouns = 'he/him' }) => {
   return (
     <motion.div className='flex items-center justify-center space-x-6 space-y-2 md:flex-col md:space-x-0'>
       <motion.div

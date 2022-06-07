@@ -14,7 +14,7 @@ export const Agenda = () => {
             <EventCard
               key={i}
               talkName={talk.talkName}
-              speakerName={talk.speakerName}
+              speaker={talk.speaker}
               time={talk.time}
               id={talk.id}
             />

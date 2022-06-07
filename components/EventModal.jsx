@@ -48,7 +48,7 @@ export const EventModal = ({ startingTalk, handleClose }) => {
                 startingTalk={startingTalk}
                 talkName={talk.talkName}
                 description={talk.description}
-                speakerName={talk.speakerName}
+                speaker={talk.speaker}
                 time={talk.time}
               />
             </motion.div>

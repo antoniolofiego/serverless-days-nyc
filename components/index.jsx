@@ -3,6 +3,8 @@ export { ActiveBreakpoint } from './ActiveBreakpoint';
 export { Agenda } from './Agenda';
 export { AnimatingDiv } from './AnimatingDiv';
 export { EventCard } from './EventCard';
+export { EventModal } from './EventModal';
+export { EventModalCard } from './EventModalCard';
 export { Footer } from './Footer';
 export { Heading } from './Heading';
 export { Hero } from './Hero';

@@ -57,11 +57,9 @@ export const Modal = ({ modalIsOpen, handleClose, children }) => {
   if (isBrowser) {
     return ReactDOM.createPortal(
       modalContent,
-      document.getElementById('modal-root')
+      document.getElementById('modal-root'),
     );
   } else {
     return null;
   }
 };
-
-export default Modal;
