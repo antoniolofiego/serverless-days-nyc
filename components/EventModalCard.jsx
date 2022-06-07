@@ -20,14 +20,14 @@ export const EventModalCard = ({
             <p className='text-sm'>{description}</p>
           </div>
           <div className='flex flex-col items-center justify-center col-span-2 space-y-8 md:items-end'>
-            <div className='relative hidden rounded-lg w-36 h-36 md:block user-logo'>
+            {/* <div className='relative hidden rounded-lg w-36 h-36 md:block user-logo'>
               <Image
                 className='object-cover rounded-lg shadow w-36 h-36'
                 src='https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80'
                 alt='avatar'
                 layout='fill'
               />
-            </div>
+            </div> */}
             <div className='space-y-6 text-center md:text-right'>
               <h2 className='text-3xl tracking-tighter'>
                 <a
