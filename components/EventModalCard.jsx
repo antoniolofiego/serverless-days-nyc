@@ -19,17 +19,17 @@ export const EventModalCard = ({
             </h2>
             <p className='text-sm'>{description}</p>
           </div>
-          <div className='flex flex-col items-center justify-center col-span-2 space-y-8'>
-            <div className='relative hidden w-32 h-32 rounded-lg md:block user-logo'>
+          <div className='flex flex-col items-center justify-center col-span-2 space-y-8 md:items-end'>
+            <div className='relative hidden rounded-lg w-36 h-36 md:block user-logo'>
               <Image
-                className='object-cover rounded-lg shadow md:w-32 md:h-32'
+                className='object-cover rounded-lg shadow w-36 h-36'
                 src='https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80'
                 alt='avatar'
                 layout='fill'
               />
             </div>
-            <div className='space-y-4 text-center'>
-              <h2 className='text-lg tracking-tighter'>
+            <div className='space-y-6 text-center md:text-right'>
+              <h2 className='text-3xl tracking-tighter'>
                 <a
                   href={`https://twitter.com/${speaker.twitter}`}
                   target='_blank'
@@ -38,7 +38,7 @@ export const EventModalCard = ({
                   {speaker.name}
                 </a>
               </h2>
-              <span>{speaker.company}</span>
+              <span className='text-xl'>{speaker.company}</span>
               <p>{time}</p>
             </div>
           </div>
