@@ -36,9 +36,8 @@ export default function Home() {
       <Hero />
       <div className='max-w-5xl pb-16 mx-auto space-y-16'>
         <About />
+        <Agenda />
         <Timeline />
-        {/* <Speakers /> */}
-        {/* <Agenda /> */}
         <Location />
         <Sponsors />
       </div>

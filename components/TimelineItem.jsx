@@ -60,7 +60,7 @@ export const TimelineItem = ({ dateCopy, nextDate }) => {
           <a href={url} target='_blank '>
             <button
               disabled={!stepIsOngoing || stepIsOver}
-              className='px-8 pt-3 pb-4 mb-8 transition-all bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title disabled:bg-gray-400'
+              className='px-8 pt-3 pb-4 mb-8 transition-all bg-gray-800 rounded-full text-gray-50 dark:text-gray-800 dark:bg-gray-100 hover:bg-gray-400 dark:hover:bg-gray-200 font-title disabled:bg-gray-400 dark:disabled:bg-gray-600'
             >
               {ctaText}
             </button>

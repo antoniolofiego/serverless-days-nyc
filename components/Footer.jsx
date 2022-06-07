@@ -5,9 +5,8 @@ export const Footer = () => {
   const menuItems = [
     { title: 'About', url: '/#about' },
     { title: 'Dates', url: '/#dates' },
+    { title: 'Agenda', url: '/#agenda' },
     { title: 'Location', url: '/#location' },
-    // { title: 'Speakers', url: '/#speakers' },
-    // { title: 'Agenda', url: '/#agenda' },
     { title: 'Sponsors', url: '/#sponsors' },
     { title: 'CoC', url: '/coc' },
     { title: 'Back to top', url: '/' },

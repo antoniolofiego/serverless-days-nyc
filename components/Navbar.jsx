@@ -28,10 +28,9 @@ export const Navbar = () => {
   const menuItems = [
     { title: 'Home', url: '/' },
     { title: 'About', url: '/#about' },
+    { title: 'Agenda', url: '/#agenda' },
     { title: 'Dates', url: '/#dates' },
     { title: 'Location', url: '/#location' },
-    // { title: 'Speakers', url: '/#speakers' },
-    // { title: 'Agenda', url: '/#agenda' },
     { title: 'Sponsors', url: '/#sponsors' },
     { title: 'CoC', url: '/coc' },
   ];
