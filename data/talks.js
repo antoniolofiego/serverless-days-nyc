@@ -1,5 +1,12 @@
 export const talks = [
   {
+    id: 0,
+    talkName: 'Opening Keynote',
+    speaker: { name: 'Mystery Speaker', twitter: '', company: 'Mystery Talk' },
+    description: `Mistery Talk`,
+    time: '10:10 AM',
+  },
+  {
     id: 1,
     talkName: 'Testing your Serverless Application',
     speaker: { name: 'Talia Nassi', twitter: 'talia_nassi', company: 'AWS' },
