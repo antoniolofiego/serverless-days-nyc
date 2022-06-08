@@ -36,7 +36,7 @@ export const talks = [
     id: 3,
     talkName: 'How to deal with persistence in serverless applications?',
     speaker: {
-      name: 'Jorge Marc Duiker',
+      name: 'Marc Duiker',
       twitter: 'marcduiker',
       company: 'Ably',
     },
