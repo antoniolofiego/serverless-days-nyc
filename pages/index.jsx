@@ -37,9 +37,9 @@ export default function Home() {
       <div className='max-w-5xl pb-16 mx-auto space-y-16'>
         <About />
         <Agenda />
-        <Timeline />
-        <Location />
         <Sponsors />
+        {/* <Timeline /> */}
+        <Location />
       </div>
     </div>
   );

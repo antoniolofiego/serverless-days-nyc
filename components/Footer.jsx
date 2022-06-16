@@ -4,10 +4,10 @@ import Link from 'next/link';
 export const Footer = () => {
   const menuItems = [
     { title: 'About', url: '/#about' },
-    { title: 'Dates', url: '/#dates' },
+    // { title: 'Dates', url: '/#dates' },
     { title: 'Agenda', url: '/#agenda' },
-    { title: 'Location', url: '/#location' },
     { title: 'Sponsors', url: '/#sponsors' },
+    { title: 'Location', url: '/#location' },
     { title: 'CoC', url: '/coc' },
     { title: 'Back to top', url: '/' },
   ];

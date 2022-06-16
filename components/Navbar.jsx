@@ -29,10 +29,10 @@ export const Navbar = () => {
     { title: 'Home', url: '/' },
     { title: 'About', url: '/#about' },
     { title: 'Agenda', url: '/#agenda' },
-    { title: 'Dates', url: '/#dates' },
-    { title: 'Location', url: '/#location' },
     { title: 'Sponsors', url: '/#sponsors' },
+    { title: 'Location', url: '/#location' },
     { title: 'CoC', url: '/coc' },
+    // { title: 'Dates', url: '/#dates' },
   ];
 
   return (
