@@ -59,9 +59,9 @@ export const talks = [
     talkName:
       'Automated Serverless Security Testing: Delivering Secure Apps Continuously',
     speaker: { 
-      name: 'Tal Melamed', 
-      twitter: '4ppsec', 
-      company: 'Appsec' 
+      name: 'Michael Khusid', 
+      twitter: 'contrastsec', 
+      company: 'Contrast Security' 
     },
     description: `Serverless technology drives efficiency for developers, but legacy application security tools provide little benefit because they lack context. But there's a better way. This session presents a completely frictionless way of testing serverless applications automatically—no scripts, tests, or delays.`,
     time: '3:10 PM',
