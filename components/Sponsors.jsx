@@ -22,25 +22,7 @@ export const Sponsors = () => {
     >
       <Heading title='Sponsors' />
       <div className='space-y-32'>
-        <div className='flex flex-col items-center space-y-8'>
-          <h3 className='text-2xl tracking-wide font-title'>Venue Sponsor</h3>
-          <a
-            href='https://developer.microsoft.com/en-us/reactor/'
-            target='_blank'
-            className='block w-full h-full'
-            rel='noreferrer'
-          >
-            <div className='relative flex items-center w-full h-48'>
-              <Image
-                className='h-48'
-                src={`/logos/${resolvedTheme}-reactor.svg`}
-                alt='Microsoft Reactor logo'
-                layout='fill'
-              />
-            </div>
-          </a>
-        </div>
-        {/* Headline/Location */}
+        {/* Headline sponsor */}
         <div className='flex flex-col items-center space-y-8'>
           <h3 className='text-2xl tracking-wide font-title'>
             Headline Sponsor
@@ -56,6 +38,25 @@ export const Sponsors = () => {
                 className='h-36'
                 src={`/logos/${resolvedTheme}-theodo.svg`}
                 alt='Theodo logo'
+                layout='fill'
+              />
+            </div>
+          </a>
+        </div>
+        {/* Location sponsor */}
+        <div className='flex flex-col items-center space-y-8'>
+          <h3 className='text-2xl tracking-wide font-title'>Venue Sponsor</h3>
+          <a
+            href='https://developer.microsoft.com/en-us/reactor/'
+            target='_blank'
+            className='block w-full h-full'
+            rel='noreferrer'
+          >
+            <div className='relative flex items-center w-full h-48'>
+              <Image
+                className='h-48'
+                src={`/logos/${resolvedTheme}-reactor.svg`}
+                alt='Microsoft Reactor logo'
                 layout='fill'
               />
             </div>
