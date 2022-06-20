@@ -45,14 +45,14 @@ export const talks = [
   },
   {
     id: 4,
-    talkName: 'Observability Across Serverless Asynchronous Managed Services',
+    talkName: 'Coming soon!',
     speaker: { 
-      name: 'Aviad Mor', 
-      twitter: 'AviadMor', 
-      company: 'Lumigo' 
+      name: 'Rita Kozlov', 
+      twitter: 'ritakozlov_', 
+      company: 'Cloudflare' 
     },
-    description: `Although applying distributed tracing to your own code is relatively simple, the real challenge is how to trace a full transaction across multiple services. During this session, we'll explore the challenges of gaining observability with managed services and see how we can overcome them together.`,
-    time: '2:30 PM',
+    description: `Coming soon!`,
+    time: '2:15 PM',
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ export const talks = [
       company: 'Contrast Security' 
     },
     description: `Serverless technology drives efficiency for developers, but legacy application security tools provide little benefit because they lack context. But there's a better way. This session presents a completely frictionless way of testing serverless applications automatically—no scripts, tests, or delays.`,
-    time: '3:10 PM',
+    time: '2:55 PM',
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ export const talks = [
       company: 'Cyclic.sh' 
     },
     description: `Serverless is great. I love serverless. I'm not always sure serverless loves me. I want to share some of the ways I've failed with serverless apps going from local, to deployed, to running with production workloads.`,
-    time: '4:10 PM',
+    time: '3:55 PM',
   },
   {
     id: 7,
@@ -88,14 +88,6 @@ export const talks = [
     },
     description:
       'We built a service that renders 3D scenes with Blender on AWS Lambda. It reduced the time between the moment when physical materials were scanned and their availability in a design tool. I will share the architecture of this system as well as the analysis of the different solutions we considered.',
-    time: '4:40 PM',
+    time: '4:25 PM',
   },
-  // {
-  //   id: 7,
-  //   talkName:
-  //     'What we should all worry about when monitoring serverless applications',
-  //   speaker: { name: 'Test', twitter: '', company: '' },
-  //   description: 'Description6',
-  //   time: '1:00 PM',
-  // },
 ];
