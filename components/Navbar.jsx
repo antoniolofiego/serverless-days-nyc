@@ -31,6 +31,7 @@ export const Navbar = () => {
     { title: 'Agenda', url: '/#agenda' },
     { title: 'Sponsors', url: '/#sponsors' },
     { title: 'Location', url: '/#location' },
+    { title: 'COVID Policy', url: '/covid' },
     { title: 'CoC', url: '/coc' },
     // { title: 'Dates', url: '/#dates' },
   ];
