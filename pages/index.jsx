@@ -1,14 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Head from 'next/head';
-import {
-  About,
-  Speakers,
-  Hero,
-  Timeline,
-  Agenda,
-  Location,
-  Sponsors,
-} from '../components';
+import { About, Hero, Agenda, Location, Sponsors } from '../components';
 
 export default function Home() {
   return (
@@ -38,7 +29,6 @@ export default function Home() {
         <About />
         <Agenda />
         <Sponsors />
-        {/* <Timeline /> */}
         <Location />
       </div>
     </div>
