@@ -37,7 +37,7 @@ const CovidPolicy = () => {
         </ul>
 
         <h2 className='text-2xl font-bold'>
-          Microsof&apos;s Vaccination Policy
+          Microsoft&apos;s Vaccination Policy
         </h2>
 
         <p>(Updated March 7, 2022)</p>
