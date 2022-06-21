@@ -6,7 +6,7 @@ const CodeOfConduct = () => {
       <Heading title='Code of Conduct' />
       <p>
         All attendees, speakers, sponsors and volunteers at our conference are
-        required to agree with the following code of conduct. Organisers will
+        required to agree with the following code of conduct. Organizers will
         enforce this code throughout the event. We are expecting cooperation
         from all participants to help ensuring a safe environment for everybody.
       </p>
@@ -25,7 +25,7 @@ const CodeOfConduct = () => {
         workshops, parties, Twitter and other online media. Conference
         participants violating these rules may be sanctioned or expelled from
         the conference without a refund at the discretion of the conference
-        organisers.
+        organizers.
       </p>
 
       <h2 className='text-2xl font-bold'>The Less Quick Version</h2>
@@ -54,7 +54,7 @@ const CodeOfConduct = () => {
 
       <p>
         If a participant engages in harassing behavior, the conference
-        organisers may take any action they deem appropriate, including warning
+        organizers may take any action they deem appropriate, including warning
         the offender or expulsion from the conference with no refund.
       </p>
 
