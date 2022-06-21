@@ -23,7 +23,7 @@ export const talks = [
   },
   {
     id: 2,
-    talkName: '"Minumum Viable Migrations" - A Migration Path to Serverless',
+    talkName: '"Minimum Viable Migrations" - A Migration Path to Serverless',
     speaker: {
       name: 'Ben Ellerby',
       twitter: 'EllerbyBen',
