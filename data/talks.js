@@ -45,13 +45,13 @@ export const talks = [
   },
   {
     id: 4,
-    talkName: 'Coming soon!',
+    talkName: 'Region: Earth, the future of serverless',
     speaker: { 
       name: 'Rita Kozlov', 
       twitter: 'ritakozlov_', 
       company: 'Cloudflare' 
     },
-    description: `Coming soon!`,
+    description: `Serverless is all about, well, not thinking about servers. Yet every time you go to deploy something, you're confronted wihh the a decision about servers: which region would you like them to be in? Why is that the case? Well, it doesn't have to be. Cloudflare Workers has been deploying applications on the edge for 5 years now. Find out how we're making it happen, and why we're excited for what's ahead from open source to storage!`,
     time: '2:15 PM',
   },
   {
