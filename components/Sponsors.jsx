@@ -28,7 +28,7 @@ export const Sponsors = () => {
             Headline Sponsor
           </h3>
           <a
-            href='https://www.theodo.com/'
+            href='https://www.theodo.com/?utm_source=serverlessdays&utm_medium=web&utm_campaign=serverlessdaysnyc'
             target='_blank'
             className='block w-full h-full'
             rel='noreferrer'
@@ -103,7 +103,7 @@ export const Sponsors = () => {
               </div>
             </a>
             <a
-              href='https://www.vendia.net/'
+              href='http://vendia.net/developer?utm_source=offline&utm_medium=events&utm_campaign=serverlessdaysnyc'
               target='_blank'
               className='block w-full h-full'
               rel='noreferrer'
