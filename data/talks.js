@@ -12,18 +12,18 @@ export const talks = [
   },
   {
     id: 1,
-    talkName: 'Testing your Serverless Application',
+    talkName: 'Building serverless applications with infrastructure as code',
     speaker: { 
       name: 'Talia Nassi', 
       twitter: 'talia_nassi', 
       company: 'AWS' 
     },
-    description: `Whats the difference between testing a serverless application and testing a normal application? Do you have to write more integration tests? Join me in this presentation as I cover how to test your serverless applications, and give you some tips to make sure you're doing it efficiently.`,
+    description: `How do you ensure consistency in your environments? How do you make sure the resources you deploy have the same configurations across different accounts? Infrastructure as code is the answer. In this talk, learn how to develop, debug, and deploy your serverless applications with the command line.`,
     time: '10:40 AM',
   },
   {
     id: 2,
-    talkName: '"Minumum Viable Migrations" - A Migration Path to Serverless',
+    talkName: '"Minimum Viable Migrations" - A Migration Path to Serverless',
     speaker: {
       name: 'Ben Ellerby',
       twitter: 'EllerbyBen',
