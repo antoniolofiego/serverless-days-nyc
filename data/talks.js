@@ -23,13 +23,13 @@ export const talks = [
   },
   {
     id: 2,
-    talkName: '"Minimum Viable Migrations" - A Migration Path to Serverless',
+    talkName: 'Scaling serverless teams with the AWS CDK',
     speaker: {
-      name: 'Ben Ellerby',
-      twitter: 'EllerbyBen',
-      company: 'Aleios, AWS Serverless Hero',
+      name: 'Alex de Boutray',
+      twitter: 'theodo_us',
+      company: 'Theodo',
     },
-    description: `Approaches to migrate to Serverless often lack the agility needed to ensure success. Thinking in terms of events provides a path to state-of-the-art Event-Driven Serverless. We'll see how Minimum Viable Migrations provide a path to Serverless using a real world airline's journey as an example.`,
+    description: `As more and more companies adopt serverless, classic top-down ops & security strategies can feel limiting. We offer an approach based on team topologies and the AWS CDK that allows platform teams to enable developer speed and innovation instead of restricting it. Happiness ensues!`,
     time: '11:40 AM',
   },
   {
